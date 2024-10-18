@@ -1,0 +1,33 @@
+<!--  RelativeLayout in which we set green color for the background -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@color/greenColor"
+    tools:context = ".MainActivity">
+    <TextView
+        android:id = "@+id/firstTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_centerHorizontal = "true"
+        android:layout_margin = "20dp"
+        android:padding = "10dp"
+        android:text = "First Text View"
+        android:textColor = "@color/white"
+        android:textSize = "20sp"
+        android:textStyle = "bold"   />
+    <!-- second TextView -->
+    <TextView
+        android:id = "@+id/secondTextView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@+id/firstTextView"
+        android:layout_centerHorizontal = "true"
+        android:layout_margin = "20dp"
+        android:padding = "10dp"
+        android:text = "Second Text View"
+        android:textColor = "@color/white"
+        android:textSize = "20sp"
+        android:textStyle = "bold"   />
+
+</RelativeLayout>
